@@ -1,10 +1,26 @@
+{% load static %} <!-- Load static files (CSS, JS, images) if needed in the future -->
 <!DOCTYPE html>
 <html>
    <head>
        <title>First Django App</title>
+       <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}"> <!-- Link to a CSS file if needed -->
    </head>
    <body style="background-color: black; color: white;">
-       <h1>Welcome!</h1>
+       <h1>Welcome!</h1> 
        <h2>This is the first Django Project</h2>
-   </body>
-</html>
+       <h3>Student List</h3>
+       <table border="1" cellpadding="5" style="background-color: white; color: black; border-collapse: collapse;">
+           <tr>
+               <th>Name</th>
+               <th>Student ID</th>
+               <th>Age</th>
+           </tr>
+           {% for student in students %} <!-- Loop through the students passed from the view. In here students refers to the list of Student objects created in the view -->
+           <tr>
+               <td>{{ student.name }}</td>
+               <td>{{ student.studentID }}</td>
+               <td>{{ student.age }}</td>
+           </tr>
+           {% endfor %} <!-- End of the loop -->
+       </table>
+   </body
