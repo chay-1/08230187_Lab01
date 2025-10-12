@@ -1,0 +1,60 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Learning Journey</title>
+    <link rel="stylesheet" href="{% static 'swJourney/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header Section -->
+        <header>
+            <h1>🌟 My Learning Journey 🌟</h1>
+            <p>Crafting digital experiences that merge creativity with technology.
+                Specializing in modern Web Development and IT Knowledge.</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="about-me">
+            <div class="about-card">
+
+                <div class="image-wrapper">
+                    <img src="{% static 'swjourney/images/profile.png' %}" alt="Profile Picture">
+                    <h2 class="image-overlay-text">About Me</h2> 
+                </div>
+                
+                <h3>Sangay Wangmo</h3>
+                
+                <p>I am a future educator from the peaceful village of Khangkhu in Paro, Bhutan.
+                    Inspired by my homeland, I am a proud daughter and friend who aspires to use my skills to educate and empower others.
+                    I believe in lifelong learning and aim to share knowledge that can bring positive change in my community and beyond. 
+                    With a passion for technology and teaching, I hope to guide the next generation to become creative, confident,
+                    and responsible digital citizens. Living simple is my motto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Screenshots -->
+        <section class="screenshots">
+            <h2>Project Screenshots</h2>
+            <div class="gallery">
+                <div class="screenshot-card">
+                    <img src="{% static 'swJourney/images/homepage.png' %}" alt="Homepage Screenshot">
+                    <p>Homepage Screenshot</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="{% static 'swJourney/images/admin.png' %}" alt="Admin Screenshot">
+                    <p>Admin Screenshot</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            © 2025 My Learning Journey
+        </footer>
+    </div>
+</body>
+</html>
